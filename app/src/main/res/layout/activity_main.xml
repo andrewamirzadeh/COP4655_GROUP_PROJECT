@@ -6,26 +6,94 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="226dp"
+        android:layout_height="143dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.366">
+
+        <RadioButton
+            android:id="@+id/rb_option_Mount_Everest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mount Everest"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/rb_option_Taj_Mahal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Taj Mahal"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/rb_option_Eiffel_Tower"
+            android:layout_width="193dp"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="The Eiffel Tower"
+            android:textSize="20sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </RadioGroup>
+
     <Button
-        android:id="@+id/btn_get_location"
+        android:id="@+id/btn_calculate_distance"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="GET LOCATION"
+        android:text="Calculate Distance"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.862" />
 
     <TextView
-        android:id="@+id/textView1"
-        android:layout_width="164dp"
-        android:layout_height="57dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/btn_get_location"
+        android:id="@+id/distance_textVew"
+        android:layout_width="231dp"
+        android:layout_height="62dp"
+        android:text="Distance will show here..."
+        app:layout_constraintBottom_toTopOf="@+id/btn_calculate_distance"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.761" />
+
+    <TextView
+        android:id="@+id/heading_textView"
+        android:layout_width="292dp"
+        android:layout_height="110dp"
+        android:text="Calculate the distance between you and these three world landmarks!"
+        android:textColor="@color/design_default_color_secondary_variant"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.071" />
+
+    <Button
+        android:id="@+id/button_information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:text="Information"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.94" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

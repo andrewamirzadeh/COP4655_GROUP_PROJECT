@@ -21,9 +21,9 @@ class MainActivity : AppCompatActivity() {
 
         fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this)
 
-        txt = findViewById(R.id.textView1)
+        txt = findViewById(R.id.distance_textVew)
 
-        findViewById<Button>(R.id.btn_get_location).setOnClickListener{
+        findViewById<Button>(R.id.btn_calculate_distance).setOnClickListener{
             fetchLocation()
         }
 
